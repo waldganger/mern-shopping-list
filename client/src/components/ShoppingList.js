@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getItems } from "../actions/itemActions";
 
-export default class ShoppingList extends Component {
+class ShoppingList extends Component {
   render() {
     const { items } = this.state;
     return (
