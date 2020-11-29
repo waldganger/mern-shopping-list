@@ -9,8 +9,7 @@ const initialState = {
     { id: uuid(), name: "Candy" },
   ],
 };
-
-export default function (state = initialState, action) {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_ITEMS:
       return {
@@ -31,4 +30,6 @@ export default function (state = initialState, action) {
     default:
       return state;
   }
-}
+};
+
+export default reducer;
